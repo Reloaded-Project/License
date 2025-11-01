@@ -56,5 +56,6 @@ plugins:
 
 nav:
   - Home: index.md
-  - About: Pages/About.md
-  - License: Pages/License.md
+  - GPLv3:
+    - About: GPLv3/about.md
+    - License: GPLv3/license.md
