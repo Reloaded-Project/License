@@ -55,13 +55,7 @@ def main():
     # Install required packages
     print("Installing required packages...")
     
-    # Install from requirements.txt relative to this script if it exists
-    script_requirements_file = Path(__file__).parent / "docs" / "requirements.txt"
-    if script_requirements_file.exists():
-        print(f"Installing from {script_requirements_file}...")
-        run_command([str(pip_exe), "install", "-r", str(script_requirements_file)], cwd=script_dir)
-    
-    # Install from requirements.txt in docs directory if it exists
+    # Install from requirements.txt in docs folder if it exists
     requirements_file = script_dir / "docs" / "requirements.txt"
     if requirements_file.exists():
         print(f"Installing from {requirements_file}...")
