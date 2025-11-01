@@ -1,0 +1,60 @@
+site_name: "Reloaded License"
+site_description: "License documentation for Reloaded Project"
+site_url: "https://github.com/Reloaded-Project/License"
+repo_url: "https://github.com/Reloaded-Project/License"
+repo_name: "Reloaded-Project/License"
+use_directory_urls: false
+
+extra_css:
+  - vendor/Reloaded/Stylesheets/reloaded.css
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist
+  - def_list
+  - meta
+  - md_in_html
+  - attr_list
+  - footnotes
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+theme:
+  name: material
+  palette:
+    scheme: reloaded3-slate
+  features:
+    - navigation.instant
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search
+  - redirects
+  - exclude-unused-files
+  - exclude
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+
+nav:
+  - Home: index.md
+  - About: Pages/About.md
+  - License: Pages/License.md
