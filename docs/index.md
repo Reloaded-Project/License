@@ -1,6 +1,6 @@
 # Reloaded License
 
-Welcome to the Reloaded Project License documentation. This site contains comprehensive information about the licenses and agreements governing the Reloaded Project.
+Welcome to the Reloaded Project License documentation. This reference site provides licenses and FAQs for Reloaded and related projects. More licenses may be covered here in the future.
 
 ## Contents
 
